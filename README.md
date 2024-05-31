@@ -17,4 +17,5 @@ samples, guidance on mobile development, and a full API reference.
 # bubble_chat
 
 
-![image](https://github.com/karzia/bubble_chat/assets/1954468/2a00c0e1-fe84-4b31-b4e9-66ac81ead025)
+![image](https://github.com/karzia/bubble_chat/assets/1954468/c03535a8-d380-4c67-ad2a-dce4cc7fa604)
+

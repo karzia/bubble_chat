@@ -56,8 +56,8 @@ class _MyHomePageState extends State<MyHomePage> {
     ChatData(ChatUser.me,Text("내이름 뭐게?")),
     ChatData(ChatUser.agent,Column(children: [
       Text("일번"),
-      Text("이번"),
-      Text("삼번"),
+      Icon(Icons.account_balance),
+      ElevatedButton(child:Text("삼번"),onPressed: (){},),
     ])),
 
   ];

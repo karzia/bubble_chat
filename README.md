@@ -15,3 +15,7 @@ For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
 # bubble_chat
+
+
+![image](https://github.com/karzia/bubble_chat/assets/1954468/c03535a8-d380-4c67-ad2a-dce4cc7fa604)
+

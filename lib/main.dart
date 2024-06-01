@@ -43,18 +43,21 @@ class MyHomePage extends StatefulWidget {
 }
 
 class ChatData{
-  final ChatUser user;
-  final Widget w;
-  const ChatData(this.user, this.w);
+  final ChatPos pos;
+  final Widget name;
+  final Widget content;
+  const ChatData(this.pos, this.name, this.content);
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  static const String user="미카";
+  static const String agent="챗챗 서비스";
 
   final testData = <ChatData>[
-    ChatData(ChatUser.me,Text("내이름 뭐게?")),
-    ChatData(ChatUser.agent,ElevatedButton(child: Text("나도 몰라"),onPressed: (){},)),
-    ChatData(ChatUser.me,Text("내이름 뭐게?")),
-    ChatData(ChatUser.agent,Column(children: [
+    ChatData(ChatPos.right, Text(user), Text("내이름 뭐게?")),
+    ChatData(ChatPos.left,Text(agent), ElevatedButton(child: Text("나도 몰라"),onPressed: (){},)),
+    ChatData(ChatPos.right,Text(user), Text("내이름 뭐게?")),
+    ChatData(ChatPos.left,Text(agent), Column(children: [
       Text("일번"),
       Icon(Icons.account_balance),
       ElevatedButton(child:Text("삼번"),onPressed: (){},),
@@ -70,7 +73,7 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: SingleChildScrollView(
         child: Column(
-          children: testData.map((e)=>renderBubble(user:e.user, widget:e.w)).toList(),
+          children: testData.map((e)=>renderBubble(pos:e.pos, name: e.name, content:e.content,date: DateTime.now())).toList(),
         ),
       ),
     );

@@ -54,13 +54,13 @@ class _MyHomePageState extends State<MyHomePage> {
   static const String agent="챗챗 서비스";
 
   final testData = <ChatData>[
-    ChatData(ChatPos.right, Text(user), Text("내이름 뭐게?")),
-    ChatData(ChatPos.left,Text(agent), ElevatedButton(child: Text("나도 몰라"),onPressed: (){},)),
-    ChatData(ChatPos.right,Text(user), Text("내이름 뭐게?")),
+    ChatData(ChatPos.right, Text(user), Text("공부좀 도와줘?")),
+    ChatData(ChatPos.left,Text(agent), Text("무슨 공부를 도와드릴까요?")),
+    ChatData(ChatPos.right,Text(user), Text("수 학 공부")),
     ChatData(ChatPos.left,Text(agent), Column(children: [
-      Text("일번"),
-      Icon(Icons.account_balance),
-      ElevatedButton(child:Text("삼번"),onPressed: (){},),
+      Text("10+10은?"),
+      Icon(Icons.timer),
+      ElevatedButton(child:Text("정답은 20 입니다."),onPressed: (){},),
     ])),
 
   ];

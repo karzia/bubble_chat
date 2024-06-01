@@ -72,6 +72,7 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text("ㅋㅋㅋ 챗!!!챗")
       ),
       body: SingleChildScrollView(
+        padding: EdgeInsets.all(10),
         child: Column(
           children: testData.map((e)=>renderBubble(pos:e.pos, name: e.name, content:e.content,date: DateTime.now())).toList(),
         ),
